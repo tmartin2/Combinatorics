@@ -1,0 +1,28 @@
+\textbf{Problem 4}
+
+%\begin{itemize}
+% \item[\textbf{a}.] 
+% \item[\textbf{b}.] 
+ %\item[\textbf{c}.]
+% \item[\textbf{d}.] 
+%\end{itemize}
+ 
+\begin{solution}\ 
+\begin{itemize}
+ \item[\textbf{a}.] The sample spaces consists of four outcomes, one of which is going \textquote{bust}. Assume that the probability of each outcome is equal. If $W$ denotes the number of trials before the \textquote{bust} outcome occurs, then  plausibly infinitely many trials can occur and \textquote{bust} would still not have happened.\\\\
+ Then the range of the not-\textquote{bust} outcomes $R_W$ is $[0, \infty) $, where $R_W(i) \in \mathbb{Z}$.\\\\
+ Denote $i$ as the outcome of going \textquote{bust} on an arbitrary trial out of $n$ total trials. Then $P(X \neq i) = (1 - p_i)^n$. And since the probability of going \textquote{bust} is $\frac{1}{4}$, we have that $P(X \neq i) = (1 - \frac{1}{4})^n = (\frac{3}{4})^n$. The PMF for the number of successful spins then is $\frac{1}{4}(\frac{3}{4})^n$ since we go bust on the $n+1$-th trial.
+ %So a PMF for the number of not-\textquote{bust} outcomes that have occurred before a \textquote{bust} outcomes occurs is $$p_x$$
+ \item[\textbf{b}.] We have that the expected winnings after one trial with the multidimensional variable $X$ is:\[\mathbb{E}[X_1] =\frac{\frac{1}{4}(\text{\$100})+\frac{1}{4}(\text{\$500})+\frac{1}{4}(\text{\$5000})+\frac{1}{4}(\text{\$0})}{1} = \text{\$25} + \text{\$125} + \text{\$1250} + \text{\$0} = \text{\$1400}\]
+ \item[\textbf{c}.] We are given that $S_n$ denotes the cumulative amount of money won after $n$ spins and want to find $\mathbb{E}[X_{n+1} | S_n]$. Going bust eliminates all previous earnings, and with a quarter chance of occurring we must remove $\frac{1}{4}\cdot S_n$ from our cumulative earnings, $(500 \cdot 0.25) + (100 \cdot 0.25) + (5000 \cdot 0.25) = \$1400$. So we have that \[\mathbb{E}[X_{n+1}|S_n] = 1400 - \frac{S_n}{4}\]
+ %\[\mathbb{E}[X_{n+1}|Y = S_n] = (n+1)P(X_{n+1} = S_{n+1} | Y = S_n) \]
+ %\[\mathbb{E}[X_{n+1}|Y = S_n]= (n+1)\frac{p(S_{n+1}, S_n)}{p_Y(S_n)}\]
+\item[\textbf{d}.] We have that,
+\[1400 \cdot 4 = 5600\]
+and can see that 
+\[\mathbb{E}[X_{n+1}|5600] = 1400 - \frac{5600}{4} = 0\]
+so
+\[\mathbb{E}[X_{n+1}|S_n] < 0 \text{ when } S_n > 5600\]
+
+\end{itemize}
+\end{solution}
