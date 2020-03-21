@@ -1,2 +1,4 @@
-# Combinatorics-Mladenovic
-Exercise work for the book Combinatorics by Pavle Mladenović
+# Library
+---
+
+CPM := Combinatorics by Pavle Mladenović
