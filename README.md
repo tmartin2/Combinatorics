@@ -1,4 +1,4 @@
 # Library
 ---
 
-CPM := Combinatorics by Pavle Mladenović
+CPM := _Combinatorics_ by Pavle Mladenović
