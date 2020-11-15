@@ -1,3 +1,10 @@
+## Added by Trevor M.
+*.py~
+*.md~
+*.txt~
+*.csv~
+
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
