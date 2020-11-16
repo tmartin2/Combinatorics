@@ -1,5 +1,6 @@
 __author__ = 'Trevor Martin'
 
+
 class Flower:
     
     __slots__ = ['_name', '_num_petals', '_price']
